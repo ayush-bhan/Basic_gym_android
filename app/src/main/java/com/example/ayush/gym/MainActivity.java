@@ -96,17 +96,23 @@ public class MainActivity extends AppCompatActivity
             Intent h= new Intent(this,MainActivity.class);
             startActivity(h);
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.d1) {
             Intent i = new Intent(this,gallery.class);
             startActivity(i);
 
-        } else if (id == R.id.nav_slideshow) {
+        }else if (id == R.id.d2) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.d3) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.d4) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.d5) {
+
+        }
+        else if ( id == R.id.d6 ){
+
+        }
+        else if ( id == R.id.d7 ){
 
         }
 
