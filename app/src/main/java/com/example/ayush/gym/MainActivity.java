@@ -101,6 +101,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
 
         }else if (id == R.id.d2) {
+            Intent j= new Intent(this,day2.class);
+            startActivity(j);
 
         } else if (id == R.id.d3) {
 
