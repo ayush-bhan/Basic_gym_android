@@ -1,11 +1,9 @@
 package com.example.ayush.gym;
 
-import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,16 +13,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.WebView;
 
-public class MainActivity extends AppCompatActivity
+public class day3 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    public String fileName = "gym.html";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_day3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -45,11 +41,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        WebView webView= (WebView) findViewById(R.id.wb1);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("file:///android_asset/" + fileName);
-
     }
 
     @Override
@@ -81,7 +72,6 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
 
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -92,22 +82,19 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-
             Intent h= new Intent(this,MainActivity.class);
             startActivity(h);
-            // Handle the camera action
+
+
         } else if (id == R.id.d1) {
             Intent i = new Intent(this,gallery.class);
             startActivity(i);
-
-        }else if (id == R.id.d2) {
+        } else if (id == R.id.d2) {
             Intent j= new Intent(this,day2.class);
             startActivity(j);
-
         } else if (id == R.id.d3) {
-            Intent k= new Intent(this,day3.class);
-            startActivity(k);
-
+        Intent k= new Intent(this,day3.class);
+        startActivity(k);
         } else if (id == R.id.d4) {
 
         } else if (id == R.id.d5) {
@@ -119,8 +106,6 @@ public class MainActivity extends AppCompatActivity
         else if ( id == R.id.d7 ){
 
         }
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

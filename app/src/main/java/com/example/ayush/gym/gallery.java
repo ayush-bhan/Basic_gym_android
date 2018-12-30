@@ -93,6 +93,8 @@ public class gallery extends AppCompatActivity
             Intent j= new Intent(this,day2.class);
             startActivity(j);
         } else if (id == R.id.d3) {
+            Intent k= new Intent(this,day3.class);
+            startActivity(k);
 
         } else if (id == R.id.d4) {
 
