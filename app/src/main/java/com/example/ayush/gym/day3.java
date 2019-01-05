@@ -93,20 +93,24 @@ public class day3 extends AppCompatActivity
             Intent j= new Intent(this,day2.class);
             startActivity(j);
         } else if (id == R.id.d3) {
-        Intent k= new Intent(this,day3.class);
-        startActivity(k);
+            Intent k= new Intent(this,day3.class);
+            startActivity(k);
+
         } else if (id == R.id.d4) {
-
+            Intent l= new Intent(this,day4.class);
+            startActivity(l);
         } else if (id == R.id.d5) {
-
+            Intent m= new Intent(this,day5.class);
+            startActivity(m);
         }
         else if ( id == R.id.d6 ){
-
+            Intent n= new Intent(this,day6.class);
+            startActivity(n);
         }
         else if ( id == R.id.d7 ){
-
+            Intent o=new Intent(this,day7.class);
+            startActivity(o);
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

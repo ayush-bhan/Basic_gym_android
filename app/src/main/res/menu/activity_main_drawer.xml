@@ -28,7 +28,7 @@
 
         <item
             android:id="@+id/d5"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/ic_star_black_24dp"
             android:title="Day 5" />
         <item
             android:id="@+id/d6"

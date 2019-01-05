@@ -92,34 +92,35 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-
             Intent h= new Intent(this,MainActivity.class);
             startActivity(h);
-            // Handle the camera action
+
+
         } else if (id == R.id.d1) {
             Intent i = new Intent(this,gallery.class);
             startActivity(i);
-
-        }else if (id == R.id.d2) {
+        } else if (id == R.id.d2) {
             Intent j= new Intent(this,day2.class);
             startActivity(j);
-
         } else if (id == R.id.d3) {
             Intent k= new Intent(this,day3.class);
             startActivity(k);
 
         } else if (id == R.id.d4) {
-
+            Intent l= new Intent(this,day4.class);
+            startActivity(l);
         } else if (id == R.id.d5) {
-
+            Intent m= new Intent(this,day5.class);
+            startActivity(m);
         }
         else if ( id == R.id.d6 ){
-
+            Intent n= new Intent(this,day6.class);
+            startActivity(n);
         }
         else if ( id == R.id.d7 ){
-
+            Intent o=new Intent(this,day7.class);
+            startActivity(o);
         }
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

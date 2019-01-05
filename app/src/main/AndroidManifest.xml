@@ -30,6 +30,22 @@
         <activity
             android:name=".day3"
             android:label="@string/title_activity_day3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".day4"
+            android:label="@string/title_activity_day4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".day5"
+            android:label="@string/title_activity_day5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".day6"
+            android:label="@string/title_activity_day6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".day7"
+            android:label="@string/title_activity_day7"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
